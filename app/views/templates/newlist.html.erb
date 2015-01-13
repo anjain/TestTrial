@@ -1,0 +1,18 @@
+<div class="ng-cloak" ng-init="initList()">
+	<div class="panel">
+		<div class="panel-body">
+
+			<form id="new_list" ng-submit="createList(listContent)">
+			    <div class="span12">
+			      <div class="row">
+			        <textarea autofocus="autofocus" class="form-control input-lg custom_txtarea" data-non-blank="" id="taskDescription" maxlength="255" ng-model="listContent" placeholder="List Content" type="text"></textarea>
+			      </div>
+			      <div class="row">
+			      	<span class="input-group-btn"><button class="btn btn-primary btn-lg" type="submit">create list</button></span>
+			      </div>
+			    </div>
+			</form>
+
+		</div>
+	</div>
+</div>

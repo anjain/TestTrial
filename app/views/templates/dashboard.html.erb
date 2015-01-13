@@ -1,0 +1,19 @@
+<div class="ng-cloak" ng-init="init()">
+  <div class="panel panel-default dashboard-list">
+    <div class="panel-heading">
+      <h4>
+        Your lists
+      </h4>
+    </div>
+    <ul class="list-group" ng-show="lists == 0">
+      <li class="list-group-item">
+        You haven't created any lists yet.
+      </li>
+    </ul>
+    <ul class="list-group">
+      <li class="list-group-item" ng-repeat="list in lists">
+        <button class="btn btn-danger btn-xs pull-right" ng-click="deleteList(list, $index)" type="button"><span class="glyphicon glyphicon-ban-circle"></span></button><a href="/lists/{{list.id}}">{{list.content}}</a>
+      </li>
+    </ul>
+  </div>
+</div>

@@ -1,0 +1,18 @@
+<div class="ng-cloak" ng-init="init()">
+  <div class="panel task-list">
+    <div class="panel-body">
+      <!-- <editablespan input-class="form-control" model="list.content" on-ready="listContentEdited(list.content)" span-class="list-name"></editablespan> -->
+      <form id="edit_list" ng-submit="listContentEdited(list.content)">
+	    <div class="span12">
+	      <div class="row">
+	        <textarea autofocus="autofocus" class="form-control input-lg custom_txtarea" data-non-blank="" id="taskDescription" maxlength="255" ng-model="list.content" placeholder="List Content" type="text"></textarea>
+	      </div>
+	      <div class="row">
+	      	<span class="input-group-btn"><button class="btn btn-primary btn-lg" type="submit">Update list</button></span>
+	      </div>
+	    </div>
+	</form>
+
+    </div>
+  </div>
+</div>
