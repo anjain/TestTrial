@@ -22,7 +22,7 @@
 		   <%=form_tag generate_pdf_path, remote: true do %>
 		     <input type="hidden" value="{{list.content}}" name="text">
 		     <input type="hidden" value="{{list.id}}" name="list_id">
-		     <button class="btn btn-primary btn-lg" type="submit">Generate Pdf</button>
+		     <button class="btn btn-primary btn-lg" type="submit" onclick="alert('We will email you when it is ready!');">Generate Pdf</button>
 		   <%end%>
 		   <br>
 		   <a href="#" class="btn btn-primary btn-lg">Comment</a>

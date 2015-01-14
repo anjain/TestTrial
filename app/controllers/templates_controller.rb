@@ -12,7 +12,8 @@ class TemplatesController < ApplicationController
   def generate_pdf
   	list = List.find(params[:list_id])
   	user = list.user
-	Sendpdf.send_pdf(user, params[:text]).deliver
+	  Sendpdf.send_pdf(user, params[:text]).deliver
+    render text: 'success'
   end
 
 end
