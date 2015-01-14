@@ -13,4 +13,5 @@ DemoList::Application.routes.draw do
   get '/dashboard' => 'templates#index'
   get '/lists/:id' => 'templates#index'
   get '/templates/:path.html' => 'templates#template', :constraints => { :path => /.+/  }
+  post '/generate_pdf' => 'templates#generate_pdf'
 end

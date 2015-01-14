@@ -6,8 +6,13 @@ class TemplatesController < ApplicationController
   end
 
   def template
-  	# binding.pry
     render :template => 'templates/' + params[:path], :layout => nil
+  end
+
+  def generate_pdf
+  	list = List.find(params[:list_id])
+  	user = list.user
+	Sendpdf.send_pdf(user, params[:text]).deliver
   end
 
 end

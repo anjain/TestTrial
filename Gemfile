@@ -10,6 +10,8 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 gem 'devise', '~> 3.0.4'
 gem 'jquery-ui-rails'
+gem 'wicked_pdf'
+gem 'wkhtmltopdf-binary'
 
 #For debugging in development
 gem 'pry', group: :development
